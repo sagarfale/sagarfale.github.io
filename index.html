@@ -31,6 +31,7 @@
             padding: 0;
         }
         .nav-links li {
+            position: relative;
             margin: 0 15px;
         }
         .nav-links a {
@@ -40,6 +41,26 @@
         }
         .nav-links a:hover {
             text-decoration: underline;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            list-style: none;
+            padding: 10px;
+            margin: 0;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+        }
+        .dropdown li {
+            margin: 5px 0;
+        }
+        .dropdown a {
+            color: #fff;
+        }
+        .nav-links li:hover .dropdown {
+            display: block;
         }
         .hero-section {
             text-align: center;
@@ -75,9 +96,22 @@
             <div class="logo">Sagar Fale - DevOps Architect</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#kubernetes">Kubernetes</a></li>
-                <li><a href="#ansible">Ansible</a></li>
-                <li><a href="#docker">Docker</a></li>
+                <li>
+                    <a href="#kubernetes">Kubernetes</a>
+                    <ul class="dropdown">
+                        <li><a href="kubernetes-setup.html">Cluster Setup</a></li>
+                        <li><a href="kubernetes-security.html">Security</a></li>
+                        <li><a href="kubernetes-loadbalancing.html">Load Balancing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#docker">Docker</a>
+                    <ul class="dropdown">
+                        <li><a href="docker-containerization.html">Containerization</a></li>
+                        <li><a href="docker-swarm.html">Swarm</a></li>
+                        <li><a href="docker-troubleshooting.html">Troubleshooting</a></li>
+                    </ul>
+                </li>
                 <li><a href="#terraform">Terraform</a></li>
                 <li><a href="#jenkins">Jenkins</a></li>
                 <li><a href="#git">Git</a></li>
@@ -90,9 +124,9 @@
 
     <section id="home" class="hero-section">
         <div class="container">
-            <h1>Welcome to Sagar Fale's DevOps Blog</h1>
-            <p>Explore tutorials, blogs, and insights on Kubernetes, Terraform, Docker, and more.</p>
-            <a href="#kubernetes" class="btn">Get Started</a>
+            <h1>DevOps/SRE Solutions with Cloud</h1>
+            <p>Optimizing database operations and driving DevOps excellence across multi-cloud environments.</p>
+            <a href="#kubernetes" class="btn">Explore More</a>
         </div>
     </section>
 
@@ -146,87 +180,6 @@
             </ul>
             <h3>Education</h3>
             <p>Bachelor of Engineering (Information Technology) Amravati University PMP – Institute of Project Management</p>
-        </div>
-    </section>
-
-    <section id="kubernetes" class="content-section">
-        <div class="container">
-            <h2>Kubernetes</h2>
-            <p>Learn the fundamentals of Kubernetes and container orchestration.</p>
-        </div>
-    </section>
-
-    <section id="ansible" class="content-section">
-        <div class="container">
-            <h2>Ansible</h2>
-            <p>Automate configuration management and deployment tasks with Ansible.</p>
-        </div>
-    </section>
-
-    <section id="docker" class="content-section">
-        <div class="container">
-            <h2>Docker</h2>
-            <p>Master containerization with Docker step by step.</p>
-        </div>
-    </section>
-
-    <section id="terraform" class="content-section">
-        <div class="container">
-            <h2>Terraform</h2>
-            <p>Get started with Infrastructure as Code using Terraform.</p>
-        </div>
-    </section>
-
-    <section id="jenkins" class="content-section">
-        <div class="container">
-            <h2>Jenkins</h2>
-            <p>Build, test, and deploy your projects using Jenkins pipelines.</p>
-        </div>
-    </section>
-
-    <section id="git" class="content-section">
-        <div class="container">
-            <h2>Git</h2>
-            <p>Version control your code effectively with Git.</p>
-        </div>
-    </section>
-
-    <section id="aws" class="content-section">
-        <div class="container">
-            <h2>AWS</h2>
-            <p>Explore cloud solutions with Amazon Web Services.</p>
-        </div>
-    </section>
-
-    <section id="azure" class="content-section">
-        <div class="container">
-            <h2>Azure</h2>
-            <p>Learn about Microsoft's Azure cloud platform.</p>
-        </div>
-    </section>
-
-    <section id="gcp" class="content-section">
-        <div class="container">
-            <h2>GCP</h2>
-            <p>Get insights into Google Cloud Platform services.</p>
-        </div>
-    </section>
-
-    <section id="about" class="content-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hi, I'm Sagar Fale, a DevOps/SRE professional with over 16 years of experience in IT. My expertise includes Kubernetes, Terraform, Docker, and multi-cloud environments. I love sharing knowledge and helping others master modern infrastructure tools.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="content-section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>If you'd like to connect or have any queries, feel free to reach out!</p>
-            <ul>
-                <li>Email: <a href="mailto:sagar.fale@gmail.com">sagar.fale@gmail.com</a></li>
-                <li>GitHub: <a href="https://github.com/sagarfale">https://github.com/sagarfale</a></li>
-            </ul>
         </div>
     </section>
 
