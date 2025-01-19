@@ -3,109 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagar Fale's Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        .contact-info {
-            margin-bottom: 20px;
-        }
-        .skills, .certifications, .experience, .education {
-            margin-bottom: 20px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 5px 0;
-        }
-    </style>
+    <meta name="author" content="Sagar Fale">
+    <title>Sagar Fale - DevOps/SRE Blog</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">Sagar Fale</a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#tutorials">Tutorials</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <h1>Sagar Fale</h1>
-    <div class="contact-info">
-        <p>Phone: 91 – 8788830060</p>
-        <p>Email: <a href="mailto:sagar.fale@gmail.com">sagar.fale@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/sagar-fale">linkedin.com/in/sagar-fale</a></p>
-        <p>Medium: <a href="https://medium.com/@sagar.fale">medium.com/@sagar.fale</a></p>
-    </div>
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1>Welcome to Sagar Fale's DevOps Blog</h1>
+            <p>Explore tutorials, blogs, and insights on Kubernetes, Terraform, Docker, and more.</p>
+            <a href="#tutorials" class="btn">Get Started</a>
+        </div>
+    </section>
 
-    <div class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Kubernetes</li>
-            <li>Docker</li>
-            <li>Istio</li>
-            <li>Portainer</li>
-            <li>Jenkins</li>
-            <li>Helm</li>
-            <li>Terraform</li>
-            <li>Ansible</li>
-            <li>Grafana</li>
-            <li>Datadog</li>
-            <li>AWS | Azure | GCP | OCI</li>
-            <li>Cloudflare | F5 | Oracle</li>
-            <li>Kiali | Jaeger | Openobserve</li>
-            <li>Shell scripting | Python</li>
-        </ul>
-    </div>
+    <section id="tutorials" class="content-section">
+        <div class="container">
+            <h2>Tutorials</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Kubernetes Basics</h3>
+                    <p>Learn the fundamentals of Kubernetes and container orchestration.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="card">
+                    <h3>Terraform for Beginners</h3>
+                    <p>Get started with Infrastructure as Code using Terraform.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="card">
+                    <h3>Docker Essentials</h3>
+                    <p>Master containerization with Docker step by step.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Certified Kubernetes CKA</li>
-            <li>AWS Solution Architect</li>
-            <li>Project Management Professional (PMP)</li>
-            <li>Oracle Database Administrator</li>
-            <li>Oracle Cloud Infra Architect</li>
-        </ul>
-    </div>
+    <section id="blogs" class="content-section">
+        <div class="container">
+            <h2>Latest Blogs</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Optimizing CI/CD Pipelines</h3>
+                    <p>Best practices for building efficient CI/CD workflows.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="card">
+                    <h3>Cloudflare Load Balancing</h3>
+                    <p>How to use Cloudflare for multi-region load balancing.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="card">
+                    <h3>Monitoring with Prometheus</h3>
+                    <p>Set up robust monitoring for your Kubernetes clusters.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="experience">
-        <h2>Professional Experience</h2>
+    <section id="about" class="content-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm Sagar Fale, a DevOps/SRE professional with over 16 years of experience in IT. My expertise includes Kubernetes, Terraform, Docker, and multi-cloud environments. I love sharing knowledge and helping others master modern infrastructure tools.</p>
+        </div>
+    </section>
 
-        <h3>DevOps Engineer – Emurgo Fintech (June 2023 - Dec 2024)</h3>
-        <ul>
-            <li>Kubernetes cluster setup and application deployment.</li>
-            <li>Automated infrastructure provisioning using Helm/Terraform/Ansible.</li>
-            <li>Built and maintained CI/CD pipelines integrated with Kubernetes.</li>
-            <li>Monitored Kubernetes clusters ensuring 99.9% uptime.</li>
-            <!-- More bullet points can be added as needed -->
-        </ul>
+    <section id="contact" class="content-section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you'd like to connect or have any queries, feel free to reach out!</p>
+            <ul>
+                <li>Email: <a href="mailto:sagar.fale@gmail.com">sagar.fale@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/sagarfale">https://github.com/sagarfale</a></li>
+            </ul>
+        </div>
+    </section>
 
-        <h3>SRE / Sr Consultant – Oracle Corporation (June 2014 - Sept 2022)</h3>
-        <ul>
-            <li>Deployment of Kubernetes clusters across multiple cloud regions.</li>
-            <li>Implemented CI/CD pipelines and automated testing.</li>
-            <!-- More bullet points can be added as needed -->
-        </ul>
-
-    </div>
-
-    <div class="education">
-        <h2>Education</h2>
-        <ul>
-            <li>Bachelor of Engineering (Information Technology) - Amravati University</li>
-            <li>PMP – Institute of Project Management</li>
-        </ul>
-    </div>
-
-    <!-- Optional Section for Technical Articles -->
-    <!--
-    <div class="articles">
-        <h2>Technical Articles @ Medium</h2>
-        ...
-    </div>
-    -->
-
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sagar Fale. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
 
